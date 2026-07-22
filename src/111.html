@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RapaCode Steel</title>
+    <style>
+    body {background-color: yellow;}
+    </style>
+</head>
+    <header>
+        <button class="menu-btn" onclick="toggleMenu()">
+            Menu <span class="hamburger"></span>
+        </button>
+</header>
+<h1>Hello Steel Web No Flab</h1>
+<p>This is my first web page</p>
+<input id="steelInput" placeholder="Buy something Steel...">
+    <button id="sayBtn">Buy Steel</button> <!--blue one-->
+    <p id="output"></p>
+<style>
+    body {
+        background-color: yellow;
+        text-align: center;
+        margin: 0;
+        padding: 50px;
+    }
+    div {/*centers that box with the image*/
+    margin: 20px auto;
+    display: inline-block;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    h1 {
+        font-family:'Bebas Neue', "sans-serif";
+        font-size: 64px;
+        letter-spacing: 4px;
+    color: blueviolet;
+        text-transform: uppercase;
+        text-shadow: 4px 4px 2px rgb(81 81 81 / 0.39);
+    }
+    p {
+        font-family:'Bebas Neue', "sans-serif";
+        font-size: 24px;
+        letter-spacing: 4px;
+        color: black;
+    }
+    input {
+        font-family:'Bebas Neue', "sans-serif";
+        font-size: 30px;
+        letter-spacing: 4px;
+        color: #00fd2a;
+    }
+    .flab-content {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        justify-content: center;
+        margin: 30px auto;
+        flex-wrap: wrap;
+    }
+    #sayBtn{
+        background: #ff3333;
+        font-family: 'Bebas Neue', sans-serif;
+        letter-spacing: 1px;
+        border: none;
+        color: yellowgreen;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-weight: bold;
+        font-size: 18px;
+        box-shadow: 0 4px 0 rgb(51 51 51 / 0.39);
+        cursor: pointer;
+    }
+    #satBtn:active {
+        box-shadow: 0 2px 0 #aa2222;
+        transform: translate(2px);
+    }
+    #steelInput {
+        padding: 10px;
+        margin-left:20px;
+        border: 8px solid rgb(81 81 81 / 0.82);
+        border-radius: 10px;
+    }
+    #sayBtn {
+        background: rgb(61 0 253);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 6px;
+        margin-left: 5px;
+        cursor: pointer;
+    }
+    #output {
+        margin-top: 15px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #ff3333;
+    }
+    #steelBtn:hover {
+        opacity: 0.8; /* add some hover effect*/
+    }
+    body {
+        padding: 50px;/*adds space around everything*/
+        text-align: center;/*keeps stuff centered*/
+    }
+    .flab-pic {
+        max-width: 50px; /*stop image from escaping*/
+        height: 50px; /*keep proportions*/
+        display: block; /*kill weird gaps*/
+        margin: 0 auto; /*center it*/
+        border: 2px solid #ddd;
+        border-radius: 12px;
+    }
+        .flab-card {
+        max-width: 500px;
+        margin: 20px auto;/*space added here*/
+        padding: 20px;
+        border: 6px solid #333;/*thicc border like you wanted*/
+        border-radius: 12px;
+        text-align: center;
+    }
+        .menu-btn {
+            background: #000019;
+            color: white;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .hamburger {
+            display: inline-block;
+            width: 20px;
+            height: 3px; /*middle line*/
+            background: white;
+            position: relative;
+            border-radius: 2px;
+        }
+    .hamburger::before,
+    .hamburger::after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 3px;
+        background: white;
+        left: 0;
+        border-radius: 2px;
+    }
+    .hamburger::before { top: -6px; }
+    .hamburger::after {top: 6px; }
+    </style>
+<script>
+<!--Steel Input Gift starts here-->
+    const btn = document.getElementById('sayBtn');
+    const input = document.getElementById('steelInput');
+    const output = document.getElementById('output');
+
+    btn.addEventListener('click',()=> {
+        output.textContent =input.value;
+    });
+</script>
+<!--Steel's Flab Section-->
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 0px;">
+<div class="flab-card"> <!--all your HTML-->
+    <p>Day 1: Let the mTORC1 inhibition begin</p>
+    <h2>Flab loss Progress</h2>
+
+    <div class="flab-content">
+        <img src="flab.png" alt="Flab loss supplement bottle" class="flab-pic">
+        <a href="order.html">
+            <button class="buy-btn">click here to buy steel</button>
+        </a>
+        </div>
+    </div>
+
+<img src="funny-fat-trixie-cartoon-eating-cookies-0nlpsdcjh1yapui7.gif" width="150" alt="Trixie">
+
+</div><!--close flex wrapper-->
+
+    <style>
+.flab-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 1rem 0;
+}
+.buy-btn {
+    padding: 10px 14px;
+    background: #ff6600;
+    color: yellow;
+    border: aqua;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: -10px;
+    margin-left: 8px;
+    text-align: center;
+}
+.flab-pic {
+    max-width: 600px;
+    height: 300px;
+border-radius: 8px;
+
+}
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.shake {
+    animation: shake 0.3s;
+}
+</style>
+</div> <!--closes flab-card-->
+<script>
+    document.addEventListener('DOMContentLoaded', function(e) {
+        document.querySelector('.buy-btn').addEventListener('click', function (e) {
+            e.preventDefault();//STOP instant jump
+
+            this.classList.remove('shake');
+            setTimeout(() => {
+                void this.offsetWidth;
+                this.classList.add('shake')
+            }, 0)
+
+            setTimeout(() => {
+                window.location.href = 'order.html';
+            }, 300);
+        });
+    });
+</script>
+</body>
+</html>
